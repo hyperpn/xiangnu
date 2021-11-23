@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+</head>
+
+<body style="height: 3000px; background-color: #f1f1f1;">
+
+    <script src="../js/jquery-min.js"></script>
+    <!-- 返回顶部 -->
+    <script src="../js/gotoTop.js"></script>
+    <!-- 顶部固定搜索框 -->
+    <script src="../js/topSearch.js"></script>
+    <!-- 引入返回顶部的js -->
+    <script src="../js/gotoTop.js"></script>
+    <script>
+        $(function() {
+            // 调用返回顶部函数
+            gotoTop({
+                imgUrl: '../images/gotoTop_05.jpg',
+                // bottom: '100px'
+            });
+
+            // 2. 调用顶部搜索框函数
+            createTopSearch({
+                imgUrl: './images/bgicon.png', // 传入搜索图标地址
+                searchText: '点我搜索,马上看见...' // 传入提示文字
+            })
+        })
+    </script>
+</body>
+
+</html>
